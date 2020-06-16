@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- saved from url=(0748)https://widget.getbutton.io/widget/wSendButton?whatsapp=%2B79150424343&company_logo_url=%2F%2Fstatic.whatshelp.io%2Fimg%2Fflag.png&greeting_message=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%95%D1%81%D1%82%D1%8C%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%20%3F%20%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D0%B8%D0%BC%20%D0%B7%D0%B0%203%20%D1%81%D0%B5%D0%BA%D1%83%D0%BD%D0%B4%D1%8B.&call_to_action=%D0%9D%D0%B0%D0%BF%D0%B8%D1%88%D0%B8%D1%82%D0%B5%20%D0%BD%D0%B0%D0%BC%20%D0%B2%20WhatsApp&position=right&ga=false&branding=true&mobile=true&desktop=true&shift_vertical=0&shift_horizontal=0&domain=null&key=null&button_color=%23ff6550&parentWrapperId=wh-widget-send-button&clientHostname=academy-heat.ru&showHelloPopup=0&isMobile=0 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Send Button Widget</title>
+
+    <meta name="robots" content="none">
+
+    <link type="text/css" rel="stylesheet" href="./style.css">
+    <link type="text/css" rel="stylesheet" href="./whatshelp-font.css" media="all" onload="if(media!=&#39;all&#39;)media=&#39;all&#39;">
+
+    <script type="text/javascript">
+        whWidgetInit = function() {
+            WidgetInitializer.widgetInitialize(
+                "desktop",
+                {"wrapperId":"wh-widget-send-button-wrapper","host":"widget.getbutton.io","proto":"https:","clientHostname":"academy-heat.ru","showHelloPopup":0,"parentWrapperId":"wh-widget-send-button","isMobile":0,"widgetType":"desktop"},
+                {"position":"right","button_color":"#ff6550","order":null,"facebook":null,"whatsapp":"+79150424343","viber":null,"snapchat":null,"line":null,"telegram":null,"vkontakte":null,"email":null,"sms":null,"call":null,"company_logo_url":"\/\/static.whatshelp.io\/img\/flag.png","greeting_message":"\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435! \u0415\u0441\u0442\u044c \u0432\u043e\u043f\u0440\u043e\u0441 ? \u043e\u0442\u0432\u0435\u0442\u0438\u043c \u0437\u0430 3 \u0441\u0435\u043a\u0443\u043d\u0434\u044b.","call_to_action":"\u041d\u0430\u043f\u0438\u0448\u0438\u0442\u0435 \u043d\u0430\u043c \u0432 WhatsApp","ga":false,"branding":true,"mobile":true,"desktop":true,"shift_vertical":0,"shift_horizontal":0,"domain":null,"key":null});
+            if (window.parent) {
+                window.parent.postMessage(JSON.stringify({'name' : 'wh-widget-loaded'}), '*');
+            }
+            function listener(event) {
+                const payload = JSON.parse(event.data);
+                if (payload.name === 'parentWindow' && payload.data.width <= 370) {
+                    document.body.classList.add('wh-small-screen');
+                }
+                // else {
+                //     document.body.classList.remove('wh-small-screen');
+                // }
+            }
+            window.addEventListener('message', listener, false);
+        };
+    </script>
+    <script async="" src="./desktop.js.download" onload="whWidgetInit();"></script>
+</head>
+<body class="wh-widget-send-button-desktop">
+    <div id="wh-widget-send-button-wrapper" class="wh-widget-send-button-wrapper wh-widget-right">
+
+        <div class="wh-widget-hello-popup-wrapper wh-popup-right wh-hide popup-slide popup-slide-in" id="wh-popup-hello">
+            <div class="wh-widget-hello-popup">
+                <div class="wh-widget-hello-popup-close" wh-click="closeHelloPopup">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                    </svg>
+                </div>
+                <div class="wh-widget-hello-popup-content">
+                    <div class="wh-widget-hello-popup-content-logo">
+                        <img wh-src="logoUrl" alt="">
+                    </div>
+                    <div class="wh-widget-hello-popup-content-text" wh-click="showMessengers">
+                        <a wh-href="href" wh-target="target">
+                            <div wh-html-br="text"></div>
+                        </a>
+                    </div>
+                    <div class="wh-clear"></div>
+                </div>
+
+                <div class="wh-messengers wh-hide" wh-multi-class="{&#39;wh-hide&#39;: &#39;!showMessengersIcons&#39;}"><ul wh-html-element="buttons"></ul></div>
+            </div>
+        </div>
+
+        <div id="popup-placement" class="popup-slide"></div>
+        <div id="wh-call-to-action" class=" wh-animation-out wh-hide" wh-click="clickOnCallToAction" style="top: 22px;">
+            <a wh-href="href" wh-target="target" href="https://wa.me/79150424343" target="_blank">
+                <div class="wh-call-to-action-content" wh-html-unsafe="text">Напишите нам в WhatsApp</div>
+            </a>
+        </div>
+    <div id="wh-widget-send-button-wrapper-list" class=" wh-widget-send-button-wrapper-list"><a class=" wh-widget-button wh-widget-button-activator" href="https://wa.me/79150424343" target="_blank"><div class=" wh-widget-button-icon wh-messenger-bg-whatsapp"><div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-9 -10 41 44" class="wh-messenger-svg-close wh-svg-close"><path d=" M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill-rule="evenodd"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="wh-messenger-svg-whatsapp wh-svg-icon"><path d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z" fill-rule="evenodd"></path></svg></div></div><div class=" mes-us">WhatsApp</div><div class=" clear"></div></a><a class=" wh-widget-send-button-get-button" href="https://getbutton.io/?utm_campaign=multy_widget&amp;utm_medium=widget&amp;utm_source=academy-heat.ru" target="_blank">Get Button</a><div class=" clear"></div></div><div class=" clear"></div></div>
+
+    <!-- MessengerPopup template -->
+    <div id="template-popup-messenger" class="wh-widget-hello-popup-wrapper wh-popup wh-popup-right">
+        <div class="wh-popup-title-bar" wh-class="bgColorMessenger">
+            <div class="title-bar-icon-close" wh-click="closePopup">
+                <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                </svg>
+            </div>
+            <div class="title-bar-icon-messenger" wh-html="icon">
+            </div>
+            <div class="title-bar-text" wh-html-unsafe="title"></div>
+            <div class="wh-clear"></div>
+        </div>
+        <div class="wh-popup-content">
+        </div>
+        <div class="wh-clear"></div>
+
+        <div class="wh-widget-hello-popup-powered" wh-class="pwdByClass">
+            <a href="https://getbutton.io/?utm_source=widget&amp;utm_medium=link&amp;utm_campaign=Powered-by-link" target="_blank">
+                Powered by&nbsp;<span>GetButton.io</span>
+            </a>
+        </div>
+        <div class="wjeh-clear"></div>
+    </div>
+
+    <div id="template-popup-content-facebook" class="content-facebook">
+        <iframe wh-src="fbIframeURL" width="302" height="300" style="border:none; border-radius: 0 0 16px 16px; overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" src="./saved_resource(1).html"></iframe>
+    </div>
+    <div id="template-popup-content-snapchat">
+        <div class="content-snapchat-qrcode" wh-html="snapchatQRCode"></div>
+        <div class="content-snapchat-name" wh-html-unsafe="snapchatUser"></div>
+    </div>
+    <div id="template-popup-content-viber">
+        <div class="content-viber-qrcode" wh-html="viberQRCode"></div>
+    </div>
+    <div id="template-popup-content-line" class="content-line">
+        <iframe wh-src="lineIframeURL" scrolling="no" frameborder="0" allowtransparency="true" src="./saved_resource(2).html"></iframe>
+    </div>
+    <div id="template-popup-content-call">
+        <div class="content-call-number" wh-html="callPhone"></div>
+    </div>
+    <!-- /MessengerPopup template -->
+
+
+</body></html>
