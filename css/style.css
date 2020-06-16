@@ -23,12 +23,10 @@ body header {
       display: block;
       color: #000;
       font-size: 30px;
-      font-family: 'montserrat-b', Arial, Helvetica, sans-serif;
       font-weight: normal; }
     body header .header_block .contact_block .phone_text {
       color: #e52c2f;
       font-size: 18px;
-      font-family: 'montserrat-b', Arial, Helvetica, sans-serif;
       text-decoration: none; }
       body header .header_block .contact_block .phone_text:hover {
         text-decoration: underline; }
@@ -48,15 +46,12 @@ body header {
           padding: 10px 25px;
           color: #000;
           font-size: 16px;
-          font-family: 'montserrat-b', Arial, Helvetica, sans-serif;
           border-radius: 0; }
           body header nav ul li a:hover {
             background-color: #e52c2f;
             color: white; }
 body .main_content .big_pic_wrapper {
-  background: url("./../img/bg1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("./../img/bg1.jpg") no-repeat center;
   background-size: cover;
   padding: 100px 146px 136px;
   min-height: 660px;
@@ -73,13 +68,11 @@ body .main_content .big_pic_wrapper {
     body .main_content .big_pic_wrapper .big_pic_inner .text_block h1 {
       color: #fff;
       font-size: 40px;
-      font-family: 'montserrat-r', Arial, Helvetica, sans-serif;
       font-weight: normal; }
     body .main_content .big_pic_wrapper .big_pic_inner .text_block p {
       margin: 15px 0 0;
       color: #fff;
       font-size: 25px;
-      font-family: 'montserrat-l', Arial, Helvetica, sans-serif;
       font-weight: normal; }
   body .main_content .big_pic_wrapper .big_pic_inner .button {
     position: relative;
@@ -90,7 +83,6 @@ body .main_content .big_pic_wrapper {
       padding: 25px 32px;
       color: #fff;
       font-size: 18px;
-      font-family: 'montserrat-b', Arial, Helvetica, sans-serif;
       text-transform: uppercase;
       text-decoration: none;
       background: #e52c2f;
@@ -100,9 +92,7 @@ body .main_content .big_pic_wrapper {
         background: #fff;
         color: #e52c2f; }
 body .main_content .bl_2_wrapper {
-  background: url("./../img/bg2.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 0;
+  background: url("./../img/bg2.jpg") no-repeat 50% 0;
   background-size: cover;
   position: relative; }
   body .main_content .bl_2_wrapper .bl_2_wrapper_inner {
@@ -117,13 +107,11 @@ body .main_content .bl_2_wrapper {
         margin: 0;
         color: #000;
         font-size: 45px;
-        font-family: 'montserrat-r', Arial, Helvetica, sans-serif;
         font-weight: normal; }
       body .main_content .bl_2_wrapper .bl_2_wrapper_inner .bl_2_wrapper_inner_text_block .bl_2_wrapper_inner_text_block_subtitle {
         padding: 0 0 12px;
         color: #000;
-        font-size: 25px;
-        font-family: 'montserrat-l', Arial, Helvetica, sans-serif; }
+        font-size: 25px; }
       body .main_content .bl_2_wrapper .bl_2_wrapper_inner .bl_2_wrapper_inner_text_block .bl_2_wrapper_inner_text_block_table .bl_2_wrapper_inner_text_block_table_main {
         display: flex;
         flex-wrap: wrap; }
@@ -145,7 +133,6 @@ body .main_content .bl_2_wrapper {
               padding: 13px 18px 12px 51px;
               color: #fff;
               font-size: 16px;
-              font-family: 'montserrat-b', Arial, Helvetica, sans-serif;
               text-decoration: none;
               background: #e52c2f url(./../img/num-but-ico.png) 15px 50% no-repeat;
               transition: all 0.2s linear; }
@@ -159,12 +146,84 @@ body .main_content .bl_2_wrapper {
           color: #000;
           font-size: 55px;
           line-height: 1.6;
-          font-family: 'montserrat-bl', Arial, Helvetica, sans-serif;
           border-radius: 0;
           display: inline-block;
           background: url(./../img/number-arr.png) right 0 bottom 0 no-repeat; }
         body .main_content .bl_2_wrapper .bl_2_wrapper_inner .bl_2_wrapper_inner_text_block .bl_2_wrapper_inner_text_block_table .bl_2_wrapper_inner_text_block_table_main .right_part {
           display: inline-block;
           align-items: center; }
+body .main_content .bl_3_wrapper {
+  position: relative;
+  background: url("./../img/bg3.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 0 20px; }
+  body .main_content .bl_3_wrapper .bl_3_wrapper_inner {
+    padding: 98px 0 104px;
+    display: flex;
+    width: 100%;
+    align-items: center; }
+    body .main_content .bl_3_wrapper .bl_3_wrapper_inner .bl_3_wrapper_title {
+      display: flex;
+      width: 50%;
+      flex-direction: column;
+      justify-content: center;
+      color: white; }
+      body .main_content .bl_3_wrapper .bl_3_wrapper_inner .bl_3_wrapper_title h3 {
+        margin-bottom: 39px;
+        font-size: 40px;
+        line-height: 1.2; }
+      body .main_content .bl_3_wrapper .bl_3_wrapper_inner .bl_3_wrapper_title p {
+        color: #fff;
+        font-size: 30px;
+        line-height: 1.2; }
+    body .main_content .bl_3_wrapper .bl_3_wrapper_inner .bl_3_wrapper_form {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 50%;
+      height: 550px;
+      color: #333;
+      font-family: "Fira Sans", sans-serif;
+      border: 1px solid #edeada;
+      border-radius: 10px;
+      background: #fff;
+      box-sizing: border-box;
+      align-items: center;
+      justify-content: center; }
+body .main_content .bl_video_wrapper .bl_video_wrapper_inner {
+  max-width: none;
+  padding: 72px 0 196px;
+  background: #fff; }
+  body .main_content .bl_video_wrapper .bl_video_wrapper_inner .bl_video_wrapper_title {
+    padding: 0 0 83px;
+    color: #2f3c82;
+    font-size: 45px;
+    text-align: center;
+    width: 650px;
+    margin: 0 auto; }
+  body .main_content .bl_video_wrapper .bl_video_wrapper_inner .bl_video_wrapper_video {
+    width: 1000px;
+    margin: 0 auto; }
+body .main_content .bl_calculator_wrapper {
+  background: #e9ebf1 url(./../img/bg4.jpg) left 50% bottom 0 no-repeat;
+  height: 2375px; }
+  body .main_content .bl_calculator_wrapper .bl_calculator_wrapper_inner {
+    background: #fff;
+    box-shadow: 0 0 90px rgba(0, 0, 0, 0.1);
+    padding: 56px 20px 60px; }
+    body .main_content .bl_calculator_wrapper .bl_calculator_wrapper_inner .bl_calculator_title {
+      color: #2f3c82;
+      font-size: 40px;
+      font-weight: 400;
+      text-align: center;
+      padding: 0 0 39px;
+      max-width: 1116px;
+      margin: 0 auto; }
+    body .main_content .bl_calculator_wrapper .bl_calculator_wrapper_inner .bl_calculator_calc {
+      height: 1000px;
+      background: white;
+      width: 100%;
+      text-align: center;
+      border: 1px solid; }
 
 /*# sourceMappingURL=style.css.map */
