@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+
 a {
   text-decoration: none;
 }
@@ -13,6 +16,7 @@ li {
 }
 
 body {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
   header {
     width: 100%;
 
@@ -515,6 +519,59 @@ body {
           font-size: 22px;
           color: #484848;
           height: 500px;
+        }
+      }
+    }
+    .bl_presents_wrapper {
+      padding: 0 30px;
+      .bl_presents_wrapper_inner {
+        background: red;
+        padding: 43px 58px 68px;
+        .bl_presents_wrapper_title {
+          h3 {
+            padding: 0 0 46px;
+            margin: 0;
+            color: #fff;
+            font-size: 65px;
+            font-weight: normal;
+            text-align: center;
+            text-transform: uppercase;
+          }
+          p {
+            text-align: center;
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 30px;
+          }
+        }
+        .bl_presents_wrapper_table {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .item {
+            margin: 0 30px 30px;
+            padding: 36px 15px 51px;
+            background: none;
+            border: 10px solid #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 300px;
+            width: 270px;
+            justify-content: space-between;
+            text-align: center;
+
+            p {
+              padding: 0;
+              color: #fff;
+              font-size: 25px;
+            }
+            .price_block {
+              padding: 44px 0 0;
+              color: #fff;
+              font-size: 18px;
+            }
+          }
         }
       }
     }
