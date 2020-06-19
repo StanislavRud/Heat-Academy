@@ -980,16 +980,180 @@ body {
   }
 }
 
-@media screen and (max-width: 1432px){
+@media screen and (max-width: 1434px){
   body {
     header{
       nav {
-        ul{
+        ul {
           li{
             .toggle {
                 display: flex;
+              .min_menu{
+                display: block;
+                background: white;
+                z-index: 1;
+                padding: 5px;
+                position: relative;
+                top: 45px;
+                left: -75px;
+                .min_menu_list {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+
+                  li {
+                    margin: 0 0 10px;
+                    width: 100%;
+                    display: none;
+
+                    a {
+                      display: block;
+                      width: 100%;
+
+                    }
+                    &:last-child {
+                      margin-bottom: 0;
+                    }
+                    &:nth-child(9){
+                      display: block;
+                      a{
+                        padding: 10px;
+                        width: 176px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            &:nth-child(9){
+              display: none;
             }
           }
+
+        }
+
+      }
+    }
+  }
+
+
+}
+@media screen and (max-width: 1262px){
+  body {
+    header{
+      nav {
+        ul {
+          li{
+            .toggle {
+              .min_menu{
+                top: 65px;
+                .min_menu_list {
+                  li {
+                    &:nth-child(8){
+                      display: block;
+                    }
+                  }
+                }
+              }
+            }
+            &:nth-child(8){
+              display: none;
+            }
+          }
+
+        }
+
+      }
+    }
+  }
+
+
+}
+@media screen and (max-width: 1342px){
+  body {
+    header{
+      nav {
+        ul {
+          li{
+            .toggle {
+              .min_menu{
+                top: 90px;
+                .min_menu_list {
+                  li {
+                    &:nth-child(7){
+                      display: block;
+                    }
+                  }
+                }
+              }
+            }
+            &:nth-child(7){
+              display: none;
+            }
+          }
+
+        }
+
+      }
+    }
+  }
+
+
+}
+@media screen and (max-width: 992px){
+  body {
+    header{
+      nav {
+        ul {
+          li{
+            .toggle {
+              .min_menu{
+                top: 124px;
+                .min_menu_list {
+                  li {
+                    &:nth-child(6){
+                      display: block;
+                    }
+                  }
+                }
+              }
+            }
+            &:nth-child(6){
+              display: none;
+            }
+          }
+
+        }
+
+      }
+    }
+  }
+
+
+}
+@media screen and (max-width: 750px){
+  body {
+    header{
+      nav {
+        ul {
+          li{
+            .toggle {
+              .min_menu{
+                top: 147px;
+                .min_menu_list {
+                  li {
+                    &:nth-child(5){
+                      display: block;
+                    }
+                  }
+                }
+              }
+            }
+            &:nth-child(5){
+              display: none;
+            }
+          }
+
         }
 
       }
