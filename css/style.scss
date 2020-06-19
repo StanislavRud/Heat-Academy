@@ -92,7 +92,6 @@ body {
 
         }
         .toggle {
-          display: none;
           background: #e52c2f  ;
           width: 34px;
           height: 34px;
@@ -102,6 +101,10 @@ body {
           align-items: center;
           padding: 5px;
           cursor: pointer;
+
+          .min_menu {
+            display: none;
+          }
           span {
             content: '';
             width: 5px;
@@ -988,7 +991,7 @@ body {
           li{
             .toggle {
                 display: flex;
-              .min_menu{
+              .min_menu_on{
                 display: block;
                 background: white;
                 z-index: 1;
@@ -996,6 +999,8 @@ body {
                 position: relative;
                 top: 45px;
                 left: -75px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
                 .min_menu_list {
                   display: flex;
                   flex-direction: column;
@@ -1045,7 +1050,7 @@ body {
         ul {
           li{
             .toggle {
-              .min_menu{
+              .min_menu_on{
                 top: 65px;
                 .min_menu_list {
                   li {
@@ -1076,7 +1081,7 @@ body {
         ul {
           li{
             .toggle {
-              .min_menu{
+              .min_menu_on{
                 top: 90px;
                 .min_menu_list {
                   li {
@@ -1107,7 +1112,7 @@ body {
         ul {
           li{
             .toggle {
-              .min_menu{
+              .min_menu_on{
                 top: 124px;
                 .min_menu_list {
                   li {
@@ -1138,7 +1143,7 @@ body {
         ul {
           li{
             .toggle {
-              .min_menu{
+              .min_menu_on{
                 top: 147px;
                 .min_menu_list {
                   li {
@@ -1151,6 +1156,36 @@ body {
             }
             &:nth-child(5){
               display: none;
+            }
+          }
+
+        }
+
+      }
+    }
+  }
+
+
+}
+@media screen and (max-width: 700px){
+  body {
+    header{
+      nav {
+        ul {
+          li{
+            display: none;
+            .toggle {
+              .min_menu_on{
+                top: 172px;
+                .min_menu_list {
+                  li {
+
+                  }
+                }
+              }
+            }
+            &:last-child {
+              display: block;
             }
           }
 

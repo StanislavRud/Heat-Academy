@@ -58,7 +58,6 @@ body {
               background-color: #e52c2f;
               color: white; }
         body header nav ul .toggle {
-          display: none;
           background: #e52c2f;
           width: 34px;
           height: 34px;
@@ -67,6 +66,8 @@ body {
           align-items: center;
           padding: 5px;
           cursor: pointer; }
+          body header nav ul .toggle .min_menu {
+            display: none; }
           body header nav ul .toggle span {
             content: '';
             width: 5px;
@@ -726,61 +727,70 @@ body {
 @media screen and (max-width: 1434px) {
   body header nav ul li .toggle {
     display: flex; }
-    body header nav ul li .toggle .min_menu {
+    body header nav ul li .toggle .min_menu_on {
       display: block;
       background: white;
       z-index: 1;
       padding: 5px;
       position: relative;
       top: 45px;
-      left: -75px; }
-      body header nav ul li .toggle .min_menu .min_menu_list {
+      left: -75px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.09); }
+      body header nav ul li .toggle .min_menu_on .min_menu_list {
         display: flex;
         flex-direction: column;
         align-items: flex-start; }
-        body header nav ul li .toggle .min_menu .min_menu_list li {
+        body header nav ul li .toggle .min_menu_on .min_menu_list li {
           margin: 0 0 10px;
           width: 100%;
           display: none; }
-          body header nav ul li .toggle .min_menu .min_menu_list li a {
+          body header nav ul li .toggle .min_menu_on .min_menu_list li a {
             display: block;
             width: 100%; }
-          body header nav ul li .toggle .min_menu .min_menu_list li:last-child {
+          body header nav ul li .toggle .min_menu_on .min_menu_list li:last-child {
             margin-bottom: 0; }
-          body header nav ul li .toggle .min_menu .min_menu_list li:nth-child(9) {
+          body header nav ul li .toggle .min_menu_on .min_menu_list li:nth-child(9) {
             display: block; }
-            body header nav ul li .toggle .min_menu .min_menu_list li:nth-child(9) a {
+            body header nav ul li .toggle .min_menu_on .min_menu_list li:nth-child(9) a {
               padding: 10px;
               width: 176px; }
   body header nav ul li:nth-child(9) {
     display: none; } }
 @media screen and (max-width: 1262px) {
-  body header nav ul li .toggle .min_menu {
+  body header nav ul li .toggle .min_menu_on {
     top: 65px; }
-    body header nav ul li .toggle .min_menu .min_menu_list li:nth-child(8) {
+    body header nav ul li .toggle .min_menu_on .min_menu_list li:nth-child(8) {
       display: block; }
   body header nav ul li:nth-child(8) {
     display: none; } }
 @media screen and (max-width: 1342px) {
-  body header nav ul li .toggle .min_menu {
+  body header nav ul li .toggle .min_menu_on {
     top: 90px; }
-    body header nav ul li .toggle .min_menu .min_menu_list li:nth-child(7) {
+    body header nav ul li .toggle .min_menu_on .min_menu_list li:nth-child(7) {
       display: block; }
   body header nav ul li:nth-child(7) {
     display: none; } }
 @media screen and (max-width: 992px) {
-  body header nav ul li .toggle .min_menu {
+  body header nav ul li .toggle .min_menu_on {
     top: 124px; }
-    body header nav ul li .toggle .min_menu .min_menu_list li:nth-child(6) {
+    body header nav ul li .toggle .min_menu_on .min_menu_list li:nth-child(6) {
       display: block; }
   body header nav ul li:nth-child(6) {
     display: none; } }
 @media screen and (max-width: 750px) {
-  body header nav ul li .toggle .min_menu {
+  body header nav ul li .toggle .min_menu_on {
     top: 147px; }
-    body header nav ul li .toggle .min_menu .min_menu_list li:nth-child(5) {
+    body header nav ul li .toggle .min_menu_on .min_menu_list li:nth-child(5) {
       display: block; }
   body header nav ul li:nth-child(5) {
     display: none; } }
+@media screen and (max-width: 700px) {
+  body header nav ul li {
+    display: none; }
+    body header nav ul li .toggle .min_menu_on {
+      top: 172px; }
+    body header nav ul li:last-child {
+      display: block; } }
 
 /*# sourceMappingURL=style.css.map */

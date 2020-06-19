@@ -149,3 +149,18 @@ var multiItemSlider = (function () {
 var slider = multiItemSlider('.slider', {
     isCycling: true
 })
+
+let menu = document.querySelector('.toggle');
+let min_menu = document.querySelector('#min_menu');
+
+menu.addEventListener('click', function () {
+
+    if (min_menu.className != 'min_menu_on') {
+        min_menu.className = 'min_menu_on';
+    } else {
+        min_menu.className = 'min_menu';
+    }
+
+
+})
+
