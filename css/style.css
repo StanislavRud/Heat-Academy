@@ -58,6 +58,7 @@ body {
               background-color: #e52c2f;
               color: white; }
         body header nav ul .toggle {
+          display: none;
           background: #e52c2f;
           width: 34px;
           height: 34px;
